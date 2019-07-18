@@ -95,13 +95,13 @@ public class MainActivity extends AppCompatActivity {
 - 载入 1hm 的 so 库：
 
   ```java
-  	System.loadLibrary("lhm");   
+  System.loadLibrary("lhm");   
   ```
 
 - run 的执行间隔时间的计算：
 
   ```java
-      MainActivity.this.t = 1500 - MainActivity.this.t % 1000;
+  MainActivity.this.t = 1500 - MainActivity.this.t % 1000;
   ```
 
   `MainActivity.this.t % 1000` 是一个分布区间在 [0 , 1000] 的平均分布 ; 因此 , 间隔时间就是一个 [500, 1500] 的平均分布 , 平均 1 s (也就是个秒表)。 
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
 - stringFromJNI2 分析：
 
   ```
-  	this.val$tv2.setText("alictf{" + MainActivity.this.stringFromJNI2(MainActivity.this.k) + "}");
+  this.val$tv2.setText("alictf{" + MainActivity.this.stringFromJNI2(MainActivity.this.k) + "}");
   ```
 
   向后翻页可以看到 stringFromJNI2是一个 native 方法：
