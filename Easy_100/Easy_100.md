@@ -4,7 +4,7 @@
 
 `adb` 将程序传输到手机上运行：
 
-![app](E:\共享文件夹\random\新建文件夹\writeup\Easy_100\image\app.jpg)
+![app](image/app.jpg)
 
 大概思路：提交正确的 `input` 返回是否正确。
 
